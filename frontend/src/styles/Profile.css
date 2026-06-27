@@ -1,0 +1,123 @@
+ .profile-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.profile-card{
+    width:700px;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.profile-avatar{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background:#6c63ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    color:white;
+}
+
+.profile-name{
+    margin-top:20px;
+    font-size:34px;
+}
+
+.role{
+    color:#666;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.profile-stats{
+    display:flex;
+    justify-content:space-around;
+    margin-top:40px;
+}
+
+.stat-box{
+    flex:1;
+}
+
+.stat-box h2{
+    color:#6c63ff;
+    font-size:34px;
+}
+
+.stat-box span{
+    color:#777;
+}
+
+.skills{
+    margin-top:40px;
+}
+
+.skills h3{
+    margin-bottom:20px;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill-tags span{
+    background:#6c63ff;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:15px;
+}
+
+/* Dark Mode */
+
+.dark .profile-card{
+    background:#1f1f1f;
+}
+
+.dark .profile-name,
+.dark .skills h3{
+    color:white;
+}
+
+.dark .role,
+.dark .stat-box span{
+    color:#d1d5db;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.profile-card{
+    width:100%;
+    padding:30px 20px;
+}
+
+.profile-stats{
+    flex-direction:column;
+    gap:20px;
+}
+
+.profile-avatar{
+    width:100px;
+    height:100px;
+    font-size:50px;
+}
+
+.profile-name{
+    font-size:28px;
+}
+
+}

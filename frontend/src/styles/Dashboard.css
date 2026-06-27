@@ -1,0 +1,97 @@
+ .dashboard-container{
+    width:90%;
+    margin:40px auto;
+}
+
+.dashboard-title{
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.stat-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+}
+
+.stat-card span{
+    font-size:45px;
+}
+
+.stat-card h3{
+    margin:15px 0;
+    color:#222;
+}
+
+.stat-card p{
+    font-size:28px;
+    color:#6c63ff;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+th{
+    background:#6c63ff;
+    color:white;
+}
+
+th,
+td{
+    padding:16px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+.edit-btn{
+    background:#4caf50;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.delete-btn{
+    background:#f44336;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.dark .stat-card,
+.dark table{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark td{
+    color:white;
+}
+
+.dark .stat-card h3{
+    color:white;
+}
